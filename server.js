@@ -3,6 +3,8 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const db = require("./db");
 const scheduleReminder = require("./reminder");
+const PORT = process.env.PORT || 3000;
+
 
 const app = express();
 app.use(cors());
